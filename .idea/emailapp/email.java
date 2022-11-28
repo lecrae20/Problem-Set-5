@@ -3,13 +3,9 @@ package emailapp;
 import java.util.Scanner;
 
 public class email extends Socialmedia{
-    private String firstName;
-    private String lastName;
-    private String password;
     private String department;
     private String email;
     private int mailboxCapacity = 500;
-    private int defaultPasswordLength = 10;
     private String alternateEmail;
     private String companySuffix = "company.com";
 
