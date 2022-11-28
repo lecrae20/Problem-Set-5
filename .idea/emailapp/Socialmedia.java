@@ -33,6 +33,16 @@ public class Socialmedia {
         this.age =  scnr.nextInt();
 
     }
+    
+    public void setName(){
+        Scanner scnr=new Scanner(System.in);
+        System.out.println("Enter first name: ")
+        firstname=scnr.next();
+        this.firstname=firstname;
+        System.out.println("Enter last name: ");
+        lastname=scnr.next();
+        this.lastname=lastname;
+    }
 
 
 
