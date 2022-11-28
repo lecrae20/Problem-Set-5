@@ -26,7 +26,7 @@ public class Socialmedia {
     }
 
     private String Country(){
-        System.out.println("New worker: " + firstname+ ". Country codes:\n1 for USA\n2 for England\n3 for Canada \n0 for Mexico\nEnter department code: ");
+        System.out.println("New worker: " + firstname+ ". Country codes:\n1 for USA\n2 for England\n3 for Canada \n0 for Mexico\nEnter country code: ");
         Scanner in=new Scanner(System.in);
         int depChoice=in.nextInt();
         if(depChoice==1){return "USA"; }
