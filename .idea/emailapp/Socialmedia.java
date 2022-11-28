@@ -10,7 +10,7 @@ public class Socialmedia {
     public String country;
 
     public String username;
-    public int mailboxCapactity=500;
+    public int followerCapacity=2000;
     public String alternateEmail;
     public String companySuffix="aeycompany.com";
     public int age;
@@ -90,8 +90,8 @@ public class Socialmedia {
 
     public String showInfo(){
         return "DISPLAY NAME: " + firstname+" "+lastname+
-                "\nCOMPANY EMAIL: "+username+
-                "\nMAILBOX CAPACITY: " + mailboxCapactity+ "mb";
+                "\n Username: "+username+
+                "\n FOLLOWER MAX: " + followerCapacity+ "mb";
     }
 
 
