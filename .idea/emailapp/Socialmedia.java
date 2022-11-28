@@ -62,6 +62,9 @@ public class Socialmedia {
         this.alternateEmail=altEmail;
 
     }
+    public void setCountry(String country){
+        this.country=country;
+    }
 
     public void changePassword(String password){
         this.password=password;
