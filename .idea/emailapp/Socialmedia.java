@@ -22,7 +22,7 @@ public class Socialmedia {
         return age;
     }
 
-    public username(String firstname, String lastname){
+    public void username(String firstname, String lastname){
         this.age=age;
         this.firstname=firstname.charAt(0);
         this.lastname=lastname.charAt(0)+lastname.charAt(1)+lastname.charAt(2);
