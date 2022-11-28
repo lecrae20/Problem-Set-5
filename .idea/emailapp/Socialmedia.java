@@ -21,8 +21,6 @@ public class Socialmedia {
         age=scnr.nextInt();
         return age;
     }
-    
-    
 
     public username(String firstname, String lastname){
         this.age=age;
@@ -33,7 +31,7 @@ public class Socialmedia {
         System.out.println("Country" + this.country);
         this.password=randomPassword(defaultpasswordLength);
         System.out.println("Your password is: " + this.password);
-        email=firstname.toLowerCase()+"."+lastname.toLowerCase()+"@"+ country+"."+companySuffix;
+        //email=firstname.toLowerCase()+"."+lastname.toLowerCase()+"@"+ country+"."+companySuffix;
 
     }
 
