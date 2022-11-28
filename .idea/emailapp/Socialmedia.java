@@ -3,20 +3,32 @@ package emailapp;
 import java.util.Scanner;
 
 public class Socialmedia {
-    private String firstname;
-    private String lastname;
-    private String password;
-    private int defaultpasswordLength=8;
-    private String country;
-    private String email;
-    private int mailboxCapactity=500;
-    private String alternateEmail;
-    private String companySuffix="aeycompany.com";
+    public String firstname;
+    public String lastname;
+    public String password;
+    public int defaultpasswordLength=8;
+    public String country;
+    public String username;
+    public int mailboxCapactity=500;
+    public String alternateEmail;
+    public String companySuffix="aeycompany.com";
+    publci int age;
+    
+    public age(){
+        System.out.println("Enter age: ");
+        int age;
+        Scanner scnr=new Scanner(System.in);
+        age=scnr.nextInt();
+        return age;
+    }
+    
+    
 
-    public Email(String firstname, String lastname){
-        this.firstname=firstname;
-        this.lastname=lastname;
-        System.out.println("EMAIL CREATED: " + this.firstname +" " + this.lastname);
+    public username(String firstname, String lastname){
+        this.age=age;
+        this.firstname=firstname.charAt(0);
+        this.lastname=lastname.charAt(0)+lastname.charAt(1)+lastname.charAt(2);
+        System.out.println("Username Created: " + this.firstname+" " + this.lastname+this.age);
         this.country=setCountry();
         System.out.println("Country" + this.country);
         this.password=randomPassword(defaultpasswordLength);
@@ -25,7 +37,7 @@ public class Socialmedia {
 
     }
 
-    private String Country(){
+    public String Country(){
         System.out.println("New worker: " + firstname+ ". Country codes:\n1 for USA\n2 for England\n3 for Canada \n0 for Mexico\nEnter country code: ");
         Scanner in=new Scanner(System.in);
         int depChoice=in.nextInt();
@@ -34,7 +46,7 @@ public class Socialmedia {
         else if(depChoice==3){return "Canada";}
         else{return "Mexico";}
     }
-    private String randomPassword(int length){
+    public String randomPassword(int length){
         String passwordSet="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%";
         char[]password= new char[length];
         for(int i=0; i<length; i++){
