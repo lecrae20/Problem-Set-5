@@ -2,12 +2,12 @@ package emailapp;
 
 import java.util.Scanner;
 
-public class Email {
+public class Socialmedia {
     private String firstname;
     private String lastname;
     private String password;
-    private int defaultpasswordLength=10;
-    private String department;
+    private int defaultpasswordLength=8;
+    private String country;
     private String email;
     private int mailboxCapactity=500;
     private String alternateEmail;
@@ -17,22 +17,22 @@ public class Email {
         this.firstname=firstname;
         this.lastname=lastname;
         System.out.println("EMAIL CREATED: " + this.firstname +" " + this.lastname);
-        this.department=setDepartment();
-        System.out.println("Department" + this.department);
+        this.country=setCountry();
+        System.out.println("Country" + this.country);
         this.password=randomPassword(defaultpasswordLength);
         System.out.println("Your password is: " + this.password);
-        email=firstname.toLowerCase()+"."+lastname.toLowerCase()+"@"+ department+"."+companySuffix;
+        email=firstname.toLowerCase()+"."+lastname.toLowerCase()+"@"+ country+"."+companySuffix;
 
     }
 
-    private String setDepartment(){
-        System.out.println("New worker: " + firstname+ ". Department codes:\n1 for sales\n2 for Development\n3 for Accounting \n0 for none\nEnter department code: ");
+    private String Country(){
+        System.out.println("New worker: " + firstname+ ". Country codes:\n1 for USA\n2 for England\n3 for Canada \n0 for Mexico\nEnter department code: ");
         Scanner in=new Scanner(System.in);
         int depChoice=in.nextInt();
-        if(depChoice==1){return "sales"; }
-        else if(depChoice==2){return "dev";}
-        else if(depChoice==3){return "acct";}
-        else{return "";}
+        if(depChoice==1){return "USA"; }
+        else if(depChoice==2){return "England";}
+        else if(depChoice==3){return "Canada";}
+        else{return "Mexico";}
     }
     private String randomPassword(int length){
         String passwordSet="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%";
