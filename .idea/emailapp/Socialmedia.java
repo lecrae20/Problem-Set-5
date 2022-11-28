@@ -12,7 +12,7 @@ public class Socialmedia {
     public int mailboxCapactity=500;
     public String alternateEmail;
     public String companySuffix="aeycompany.com";
-    publci int age;
+    public int age;
     
     public age(){
         System.out.println("Enter age: ");
@@ -81,7 +81,7 @@ public class Socialmedia {
 
     public String showInfo(){
         return "DISPLAY NAME: " + firstname+" "+lastname+
-                "\nCOMPANY EMAIL: "+email+
+                "\n SOCIAL MEDIA USERNAME: "+username+
                 "\nMAILBOX CAPACITY: " + mailboxCapactity+ "mb";
     }
 
