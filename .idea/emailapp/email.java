@@ -11,7 +11,7 @@ public class email extends Socialmedia{
     private int mailboxCapacity = 500;
     private int defaultPasswordLength = 10;
     private String alternateEmail;
-    private String companySuffix = "aeycompany.com";
+    private String companySuffix = "company.com";
 
     // Constructor to receive the first name and last name
     public Email(String firstName, String lastName) {
