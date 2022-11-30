@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class instagram extends Socialmedia{
 Scanner scnr=new Scanner(System.in);
+  String song="";
   
   System.out.println("**********************");
   
@@ -12,4 +13,5 @@ Scanner scnr=new Scanner(System.in);
   
   System.out.println("******* MY BIO ******");
   System.out.print("Hello! My name is " + firstname + lastname + "! " + "I am a " + age + " year old from " + country + "! " + "Welcome to my page!");
+  System.out.print(" My favorite song is" + song);
 }
