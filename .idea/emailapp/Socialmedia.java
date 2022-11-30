@@ -11,8 +11,6 @@ public class Socialmedia {
 
     public String username;
     public int followerCapacity=2000;
-    public String alternateEmail;
-    public String companySuffix="aeycompany.com";
     public int age;
 
     public Socialmedia(String firstname, String lastname) {
@@ -87,13 +85,7 @@ public class Socialmedia {
     public void changePassword(String password){
         this.password=password;
     }
-
-    public int getMailboxCapactity(){
-        return mailboxCapactity;
-    }
-    public String getAlternateEmail(){
-        return alternateEmail;
-    }
+ 
     public String getPassword(){
         return password;
     }
