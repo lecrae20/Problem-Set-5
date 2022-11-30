@@ -70,14 +70,11 @@ public class Socialmedia {
         }
         return new String(password);
     }
-    public void setMailboxCapactity(int capactity){
-        this.mailboxCapactity=capactity;
+    public void setFollowerCapacity(){
+        this.followerCapacity=followerCapacity;
     }
-
-    public void setAlternateEmail(String altEmail){
-        this.alternateEmail=altEmail;
-
-    }
+   
+ 
     public void setCountry(String country){
         this.country=country;
     }
