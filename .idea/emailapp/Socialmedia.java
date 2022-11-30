@@ -1,8 +1,5 @@
-package emailapp;
-
+package Socialmedia;
 import java.util.Scanner;
-
-// CREDIT : from YouTube video https://www.youtube.com/watch?v=U3Ibvu0htNs&t=1s
 
 public class Socialmedia {
     public String firstname;
@@ -10,7 +7,6 @@ public class Socialmedia {
     public String password;
     public int defaultpasswordLength=8;
     public String country;
-
     public String username;
     public int followerCapacity=2000;
     public int age;
@@ -36,7 +32,7 @@ public class Socialmedia {
     
     public void setName(){
         Scanner scnr=new Scanner(System.in);
-        System.out.println("Enter first name: ")
+        System.out.println("Enter first name: ");
         firstname=scnr.next();
         this.firstname=firstname;
         System.out.println("Enter last name: ");
