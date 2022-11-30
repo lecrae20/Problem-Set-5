@@ -2,6 +2,8 @@ package emailapp;
 
 import java.util.Scanner;
 
+// CREDIT : from YouTube video https://www.youtube.com/watch?v=U3Ibvu0htNs&t=1s
+
 public class Socialmedia {
     public String firstname;
     public String lastname;
