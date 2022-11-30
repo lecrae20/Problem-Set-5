@@ -1,11 +1,14 @@
-/* package Socialmedia;
+/*package emailapp;
+
 import java.util.Scanner;
-public class email extends Socialmedia{
-    public String department;
-    public String email;
-    public int mailboxCapacity = 500;
-    public String alternateEmail;
-    public String companySuffix = "company.com";
+
+
+public class email extends Socialmedia {
+    private String department;
+    private String email;
+    private int mailboxCapacity = 500;
+    private String alternateEmail;
+    private String companySuffix = "company.com";
 
     // Constructor to receive the first name and last name
     public Email(String firstName, String lastName) {
@@ -21,10 +24,6 @@ public class email extends Socialmedia{
 
         // Combine elements to generate email
         email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companySuffix;
-    }
-
-    public email(String firstname, String lastname) {
-        super(firstname, lastname);
     }
 
     // Ask for the department
@@ -75,4 +74,7 @@ public class email extends Socialmedia{
         return "DISPLAY NAME: " + firstName + lastName + "\nCOMPANY EMAIL: " + email + "\nMAILBOX CAPACITY: " + mailboxCapacity + "mb";
     }
 }
-*/
+
+ */
+
+

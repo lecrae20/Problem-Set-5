@@ -1,8 +1,11 @@
-package Socailmedia;
+package socialMedia;
 
 import java.util.Scanner;
-public class instagram extends Socialmedia{
-  public instagram(String firstname, String lastname){
+public class Instagram extends Socialmedia{
+
+
+  public Instagram(String firstname, String lastname){
+    super(firstname, lastname);
     Scanner scnr = new Scanner(System.in);
     String song = "";
 
