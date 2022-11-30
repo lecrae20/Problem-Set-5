@@ -1,3 +1,11 @@
+/**********************************************************************
+ 2 *@file: SocialMedia.java
+ 3 *@brief: The most difficult part was creating methods and classes so that the inheritance aspect of the code run correctly.
+ 4 *@author: Abby L., Ella V., Emma D., Caroline M.
+ 5 *@date: 11/30/22
+ 6 *@acknowledgement: Master Skills Email App - YouTube
+ 7 ***********************************************************************/
+
 package socialMedia;
 import java.util.Scanner;
 
