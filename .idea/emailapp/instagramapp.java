@@ -1,9 +1,8 @@
-package emailapp; 
-
+package Socialmedia;
 public class instagramapp{
-  public static void main{ 
+  public static void main(String[] args) {
     instagram insta1= new instagram();
-    System.out.print(showInfo);
+    System.out.print(showInfo());
     
     
   }
