@@ -1,4 +1,4 @@
-package Socialmedia;
+/* package Socialmedia;
 import java.util.Scanner;
 public class email extends Socialmedia{
     public String department;
@@ -75,3 +75,4 @@ public class email extends Socialmedia{
         return "DISPLAY NAME: " + firstName + lastName + "\nCOMPANY EMAIL: " + email + "\nMAILBOX CAPACITY: " + mailboxCapacity + "mb";
     }
 }
+*/
