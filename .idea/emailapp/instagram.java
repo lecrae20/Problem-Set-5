@@ -1,9 +1,11 @@
 package emailapp;
+import java.awt.*;
 
 import java.util.Scanner;
 
 public class instagram extends Socialmedia{
 Scanner scnr=new Scanner(System.in);
+  StdDraw.setScale(-0.1, 7.1);
   String song="";
   
   System.out.println("**********************");
