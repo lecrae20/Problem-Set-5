@@ -13,10 +13,10 @@ public class Socialmedia {
     public String firstname;
     public String lastname;
     public String password;
-    public int defaultpasswordLength=8;
+    public int defaultpasswordLength = 8;
     public String country;
     public String username;
-    public int followerCapacity=2125;
+    public int followerCapacity = 2125;
     public int age;
     public String song;
 
@@ -25,7 +25,7 @@ public class Socialmedia {
         this.lastname = lastname;
         this.setCountry();
         System.out.println("Country:" + this.country);
-        this.password=randomPassword(defaultpasswordLength);
+        this.password = randomPassword(defaultpasswordLength);
         System.out.println("Your password is: " + this.password);
         this.setUsername(this.firstname, this.lastname);
         this.setAge();
@@ -33,14 +33,12 @@ public class Socialmedia {
 
     }
 
-    public void setAge(){
+    public void setAge() {
         System.out.println("Enter age: ");
-        Scanner scnr=new Scanner(System.in);
-        this.age =  scnr.nextInt();
+        Scanner scnr = new Scanner(System.in);
+        this.age = scnr.nextInt();
 
     }
-
-
 
 
     public String setUsername(String firstname, String lastname) {
@@ -51,25 +49,44 @@ public class Socialmedia {
     }
 
 
-    public void setCountry(){
+    public void setCountry() {
         System.out.println("New account: " + firstname + lastname + " \nCountry codes:\n1 for USA\n2 for England\n3 for Canada \n0 for Mexico\nEnter country code: ");
-        Scanner in=new Scanner(System.in);
-        int depChoice=in.nextInt();
-        if(depChoice==1){country = " USA"; }
-        else if(depChoice==2){country = " England";}
-        else if(depChoice==3){country = " Canada";}
-        else{country = " Mexico";}
+        Scanner in = new Scanner(System.in);
+        int depChoice = in.nextInt();
+        if (depChoice == 1) {
+            country = " USA";
+        } else if (depChoice == 2) {
+            country = " England";
+        } else if (depChoice == 3) {
+            country = " Canada";
+        } else {
+            country = " Mexico";
+        }
     }
-    public String randomPassword(int length){
-        String passwordSet="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%";
-        char[]password= new char[length];
-        for(int i=0; i<length; i++){
-            int rand = (int)(Math.random()* passwordSet.length());
-            password[i]=passwordSet.charAt(rand);
+
+    public String randomPassword(int length) {
+        String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%";
+        char[] password = new char[length];
+        for (int i = 0; i < length; i++) {
+            int rand = (int) (Math.random() * passwordSet.length());
+            password[i] = passwordSet.charAt(rand);
 
         }
         return new String(password);
     }
+    public void getTweet() {
+        int i;
+        String[] tweets = new String[100];
+        for (i = 0; i < tweets.length; i++) {
+            System.out.println("Enter tweet or Enter -1 to quit and see profile: ");
+            Scanner scnr = new Scanner(System.in);
+            tweets[i] = scnr.nextLine();
+            if (tweets[i].equals("-1")){
+                break;
+            }
+        }
+    }
+
     public void setFollowerCapacity(){
         this.followerCapacity=followerCapacity;
     }
