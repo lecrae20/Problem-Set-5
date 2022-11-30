@@ -1,31 +1,33 @@
-package emailapp;
-
+package Socialmedia;
 import java.util.Scanner;
-
 public class email extends Socialmedia{
-    private String department;
-    private String email;
-    private int mailboxCapacity = 500;
-    private String alternateEmail;
-    private String companySuffix = "company.com";
+    public String department;
+    public String email;
+    public int mailboxCapacity = 500;
+    public String alternateEmail;
+    public String companySuffix = "company.com";
 
-    
+    // Constructor to receive the first name and last name
     public Email(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
 
-        
+        // Call a method asking for the department - return the department
         this.department = setDepartment();
 
-        
+        // Call a method that returns a random password
         this.password = randomPassword(defaultPasswordLength);
         System.out.println("Your password is: " + this.password);
 
-        
+        // Combine elements to generate email
         email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companySuffix;
     }
 
-    
+    public email(String firstname, String lastname) {
+        super(firstname, lastname);
+    }
+
+    // Ask for the department
     private String setDepartment() {
         System.out.println("New worker: " + firstName + "\nDepartment codes:\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none\nEnter department code: ");
         Scanner in = new Scanner(System.in);
@@ -44,17 +46,17 @@ public class email extends Socialmedia{
         }
     }
 
-    
+    // Set the mailbox capacity
     public void setMailboxCapacity(int capacity) {
         this.mailboxCapacity = capacity;
     }
 
-   
+    // Set the alternate email
     public void setAlternateEmail(String altEmail) {
         this.alternateEmail = altEmail;
     }
 
-    
+    // Change the password
     public void changePassword(String password){
         this.password = password;
     }
@@ -73,5 +75,3 @@ public class email extends Socialmedia{
         return "DISPLAY NAME: " + firstName + lastName + "\nCOMPANY EMAIL: " + email + "\nMAILBOX CAPACITY: " + mailboxCapacity + "mb";
     }
 }
-
-
