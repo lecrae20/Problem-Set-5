@@ -90,7 +90,7 @@ public class Socialmedia {
     public String showInfo(){
         return "DISPLAY NAME: " + firstname+" "+lastname+
                 "\n Username: "+username+
-                "\n FOLLOWER MAX: " + followerCapacity+ "mb";
+                "\n FOLLOWER MAX: " + followerCapacity;
     }
 
 
