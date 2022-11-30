@@ -15,7 +15,7 @@ Scanner scnr=new Scanner(System.in);
   
   StdDraw.rectangle(3.5, 6.18, .45, .15);
   
-  StdDraw.text(3.5, 6.5, "******* MY BIO ******/n Hello! My name is " + firstname + " " + lastname + "! " + "I am a " + age + " year old from " + country + "! " + "Welcome to my page!/n My favorite song is " + song);
+  StdDraw.text(3.5, 6.5, "******* MY BIO ******/n Hello! My name is " + firstname + " " + lastname + "! " + "I am a " + age + " year old from " + country + "! Welcome to my page!/n My favorite song is " + song);
   
  // System.out.println("******* MY BIO ******");
 //  System.out.print("Hello! My name is " + firstname + " " + lastname + "! " + "I am a " + age + " year old from " + country + "! " + "Welcome to my page!");
